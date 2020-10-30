@@ -1,4 +1,5 @@
 ## docker file for Manta:  https://github.com/Illumina/manta with bcftools as a utility
+## fredhutch/manta:1.6.0
 FROM fredhutch/bcftools:1.9
 
 RUN apt-get update -y && apt-get install -y curl build-essential bzip2 gcc g++ make python zlib1g-dev wget
