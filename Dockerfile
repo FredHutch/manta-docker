@@ -11,7 +11,7 @@ RUN tar jxf manta-1.6.0.release_src.tar.bz2 && \
 	mkdir build 
 
 WORKDIR /build
-RUN ../manta-1.6.0.release_src/configure --jobs=4 --prefix=/build && make -j4 install
+RUN ../manta-1.6.0.release_src/configure --jobs=4 && make -j4 install
 
 WORKDIR /
 
